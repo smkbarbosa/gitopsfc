@@ -1,11 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
-Kind: Kustomization
+kind: Kustomization
 
 resources:
-  - "deployment.yaml"
-  - "service.yaml"
+- deployment.yaml
+- service.yaml
 
 images:
 - name: goserver
   newName: barbosasmk/gitopsfc
-  newTag: sha
+  newTag: 4c0c37cb1d26f4bb661bcd99ac12722b7ad11e7c
